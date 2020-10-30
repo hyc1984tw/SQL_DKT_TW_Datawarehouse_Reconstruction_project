@@ -1,5 +1,6 @@
-# Concenient_store 同一筆transaction_id有重複的數據，因此使用rank()使transation_id 成為primary key#
-# 使用 GCP #
+# Concenient_store Transaction_id is not pairmay key (contains repetitive data), therefore use rank() make transation_id become primary key#
+# Google Cloud Platform #
+---------------------------------------------------------------------------------------------------
 
 Create or replace table `mldata-8nkm.cdp3.taiwan_cdp_convenient_store` as
 

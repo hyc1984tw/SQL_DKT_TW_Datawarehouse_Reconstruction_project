@@ -1,4 +1,5 @@
 # Concenient_store 同一筆transaction_id有重複的數據，因此使用rank()使transation_id 成為primary key#
+# 使用 GCP #
 
 Create or replace table `mldata-8nkm.cdp3.taiwan_cdp_convenient_store` as
 

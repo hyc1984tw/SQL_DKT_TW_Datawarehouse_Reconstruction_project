@@ -2,11 +2,12 @@
 
 ## A. Data Collection
 
-### A.1 Datalake > Temporary Tables on Redshift
+### A.1 Central Datalake Data Collection on Redshift
 
-### A.2 Redshift to S3
+### A.2 Data Transfer from Redshift to S3
+S3 is a relay station to transfer the data from global data lake to local datawarehouse.
 
-### A.3 S3 to Datawarehouse on GCP
+### A.3 Data Transfer from S3 to Local datawarehouse on GCP
 
 
 ## B. Data Cleaning

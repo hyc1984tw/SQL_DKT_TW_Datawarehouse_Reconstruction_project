@@ -5,7 +5,9 @@
 ### A.1 Central Datalake Data Collection on Redshift
 
 ### A.2 Data Transfer from Redshift to S3
-S3 is a relay station to store the tables from the global data lake and then transfer the tables to local datawarehouse for security purposes.
+S3 is a relay station to store the tables transferred from the global data lake and then transfer the tables to local GCP's datawarehouse. The relay station flow is made for data security purpose. 
+
+The automatic data transfer in this stage is organised by Jeankin pipeline and thanks to Jeankin's cloking
 
 ### A.3 Data Transfer from S3 to Local datawarehouse on GCP
 

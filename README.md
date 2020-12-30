@@ -1,4 +1,15 @@
-# cdp3_code
+# DKT TW Datawarehouse Reconstruction Project
+
+## Data Collection
+
+# Datalake > Temporary Tables on Redshift
+
+# Redshift to S3
+
+# S3 to Datawarehouse on GCP
+
+
+## Data Cleaning
 
 cdp3 stores the code for cdp3 table. cdp3 is the cleaned data from cdp2.
 

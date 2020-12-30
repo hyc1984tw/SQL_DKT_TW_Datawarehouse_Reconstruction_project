@@ -15,7 +15,7 @@ S3 is a relay station to store the tables from the global data lake and then tra
 cdp3 stores the code for cdp3 table. cdp3 is the cleaned data from cdp2.
 
 1- taiwan_cdp_optin: non-primary key (cdp2) to primary key (cdp3)
-    primary key is "person_id".
+    primary key is "person_id"./
 2- taiwan_cdp_convenient_store: non-primary key (cdp2) to primary key (cdp3)
     primary key is "transaction_id".
 3- taiwan_cdp_all_customer: non-primary key (cdp2) to primary key (cdp3)

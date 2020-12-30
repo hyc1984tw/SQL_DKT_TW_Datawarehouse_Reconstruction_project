@@ -1,15 +1,15 @@
 # DKT TW Datawarehouse Reconstruction Project
 
-## Data Collection
+## A. Data Collection
 
-# Datalake > Temporary Tables on Redshift
+### A.1 Datalake > Temporary Tables on Redshift
 
-# Redshift to S3
+### A.2 Redshift to S3
 
-# S3 to Datawarehouse on GCP
+### A.3 S3 to Datawarehouse on GCP
 
 
-## Data Cleaning
+## B. Data Cleaning
 
 cdp3 stores the code for cdp3 table. cdp3 is the cleaned data from cdp2.
 

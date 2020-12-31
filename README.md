@@ -1,6 +1,10 @@
 # DKT TW Datawarehouse Reconstruction Project
 
+**Goal:** To reconstruct datawarehouse for Decathlon Taiwan. The datawarehous contains retail store sales data, membership data, retail sport prodcut data and E-commerce customer delilvery data for Decathlon Taiwan. This project are splited into three parts: 1) Data Collection, 2) Data Cleaning, 3) Automation.
+
 ## A. Data Collection
+
+All the sales data are stored in the central datalake of Decathlon Group. The datalake is operated by AMAZON BIG DATA SYSTEM. In this part, we needs to make query in the datalake to obtain the data for Decathlon Taiwan. These data will be organised in various tables and then be transferred to local datawarehouse. 
 
 ### A.1 Central Datalake Data Collection on Redshift
 

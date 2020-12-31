@@ -22,7 +22,7 @@ Once the tables are transferred to S3, the last data transfer to local datawareh
 
 ## B. Data Cleaning
 
-CDP3 is a new datasets storing the cleaned data from cdp2.
+CDP3 is a new datasets storing the cleaned data from cdp2. The main issues of the uncleaned data is lack of primary key in the tables. The following identify the primary keys in each tables. The query codes of the cleaning processes are stored in this repository.
 
 1.  taiwan_cdp_optin: non-primary key (cdp2) to primary key (cdp3)
     primary key is "person_id".
@@ -43,6 +43,8 @@ Since the day-to-day sales data are transferred into the central datalake, it is
 1. Redshift to S3: We can use scheduled transfer function in Jeankins to organised day-to-day data transfers from Central Datalakes.
 1. S3 to GCP CDP2: We can use scheduled transfer function on GCP to organised day-to-day data transfer from S3.
 1. GCP CDP2 to GCP CDP3: We can use scheulded query function on GCP to organised day-to-day data cleaning from CDP2 to CDP3.
+
+
 
 
 The entire flow is shown in figure below.

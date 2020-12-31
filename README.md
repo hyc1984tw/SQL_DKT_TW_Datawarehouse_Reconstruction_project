@@ -22,7 +22,7 @@ Once the tables are transferred to S3, the last data transfer to local datawareh
 
 ## B. Data Cleaning
 
-cdp3 stores the code for cdp3 table. cdp3 is the cleaned data from cdp2.
+CDP3 is a new datasets storing the cleaned data from cdp2.
 
 1.  taiwan_cdp_optin: non-primary key (cdp2) to primary key (cdp3)
     primary key is "person_id".
@@ -37,3 +37,15 @@ Purpose of making primary key is for joining table later in cdp_ml.
 
 
 ## C. Automation
+
+Since the day-to-day sales data are transferred into the central datalake, it is important to set up automatic transfer every day to update our local data warehouse.
+
+1. Redshift to S3: We can use scheduled transfer function in Jeankins to organised day-to-day data transfers from Central Datalakes.
+1. S3 to GCP CDP2: We can use scheduled transfer function on GCP to organised day-to-day data transfer from S3.
+1. GCP CDP2 to GCP CDP3: We can use scheulded query function on GCP to organised day-to-day data cleaning from CDP2 to CDP3.
+
+
+The entire flow is shown in figure below.
+
+![data_warehouse_reconstruction_flow](https://user-images.githubusercontent.com/68263082/103394982-c348af00-4b66-11eb-9a13-c047aba3306d.png)
+
